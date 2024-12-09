@@ -1,0 +1,83 @@
+.main {
+  min-height: 200dvh;
+  width: 100vw;
+  padding: 8rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main span {
+  background-color: rgb(110, 110, 184);
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0.6rem 2rem;
+  width: fit-content;
+}
+
+.gallerycontainer {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  height: 40dvh;
+  scroll-snap-type: x mandatory;
+  border: 0.8rem solid aqua;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem aqua;
+  background-color: black;
+}
+
+.gallery {
+  display: flex;
+  height: 60%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.card {
+  height: 95%;
+  width: 20%;
+  box-shadow: 0 0 1rem black;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+}
+
+.btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-left: 2rem;
+  border: none;
+  background-color: white;
+  transition-property: background;
+  transition-duration: 0.4s;
+  transform-origin: left;
+  transition-timing-function: ease;
+  box-shadow: 0 0 1rem white;
+
+}
+.btn:hover {
+  /* background-color: rgb(131, 126, 126);
+   */
+   border: 0.3rem solid black;
+   box-shadow: 0 0 2rem yellow;
+  cursor: pointer;
+}

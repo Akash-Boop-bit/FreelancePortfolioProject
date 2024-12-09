@@ -1,0 +1,14 @@
+.main {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main h1 {
+  font-size: 2rem;
+  color: blue;
+}
+.first,
+.second {
+  color: rgb(41, 216, 41);
+}

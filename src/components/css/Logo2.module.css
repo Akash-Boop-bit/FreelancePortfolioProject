@@ -1,0 +1,9 @@
+.main {
+  min-height: 100dvh;
+  min-width: 100vw;
+  /* background: linear-gradient(150deg, rgb(11, 11, 108), rgb(72, 72, 195), rgb(11, 11, 108)); */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
