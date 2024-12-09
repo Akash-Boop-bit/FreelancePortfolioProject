@@ -1,0 +1,5 @@
+[[redirects]]
+  # Redirect all requests to the index.html file
+  from = "/*"
+  to = "/index.html"
+  status = 200
