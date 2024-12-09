@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Logo2 from "./Logo2";
 
-const Projects = () => {
+const Projects = ({size}) => {
   const [render, setRender] = useState(false);
   useEffect(() => {
     setTimeout(() => {
@@ -16,7 +16,7 @@ const Projects = () => {
         <Logo2 />
       ) : (
         <div>
-          <Navbar home={false} />
+          <Navbar home={false} size={size}/>
         </div>
       )}
     </>

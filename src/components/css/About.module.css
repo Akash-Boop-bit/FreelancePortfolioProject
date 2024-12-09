@@ -72,12 +72,25 @@
   transform-origin: left;
   transition-timing-function: ease;
   box-shadow: 0 0 1rem white;
-
 }
 .btn:hover {
   /* background-color: rgb(131, 126, 126);
    */
-   border: 0.3rem solid black;
-   box-shadow: 0 0 2rem yellow;
+  border: 0.3rem solid black;
+  box-shadow: 0 0 2rem yellow;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .gallerycontainer {
+    height: 30dvh;
+  }
+  .gallery{
+    height: 60%;
+    align-items: center;
+  }
+  .card {
+    height: 60%;
+  }
+  
 }

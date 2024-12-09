@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const About = () => {
+const About = ({ size }) => {
   const [mainarr, setMainarr] = useState([
     ["react.png"],
     ["node.webp"],
@@ -48,13 +48,15 @@ const About = () => {
   useGSAP(
     () => {
       let tl = gsap.timeline({});
-      gsap.to(boxref.current, {
-        duration: 1,
-        backgroundColor: "black",
-        scrollTrigger: {
-          trigger: boxref.current,
-        },
-      });
+      if (size) {
+        gsap.to(boxref.current, {
+          duration: 1,
+          backgroundColor: "black",
+          scrollTrigger: {
+            trigger: boxref.current,
+          },
+        });
+      }
     },
     { scope: "#boxs" }
   );
@@ -112,7 +114,13 @@ const About = () => {
   return (
     <>
       <div id="boxs">
-        <div ref={boxref} className={classes.main}>
+        <div
+          style={
+            !size ? { backgroundColor: "black" } : { backgroundColor: "white" }
+          }
+          ref={boxref}
+          className={classes.main}
+        >
           <span>Skills</span>
           <div className={classes.gallerycontainer}>
             <div ref={galleryref} className={classes.gallery}>

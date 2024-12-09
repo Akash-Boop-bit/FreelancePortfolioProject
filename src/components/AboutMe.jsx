@@ -8,7 +8,7 @@ import About from "./About";
 
 gsap.registerPlugin(useGSAP);
 
-const AboutMe = () => {
+const AboutMe = ({size}) => {
   const [render, setRender] = useState(false);
   useEffect(() => {
     setTimeout(() => {
@@ -105,7 +105,7 @@ const AboutMe = () => {
         <Logo2 />
       ) : (
         <div>
-          <Navbar home={false} />
+          <Navbar home={false} size={size}/>
         </div>
       )}
       <div className={classes.background}>
@@ -165,7 +165,7 @@ const AboutMe = () => {
           <div className="margin"></div>
         </div>
 
-        <About />
+        <About size={size}/>
       </div>
     </>
   );

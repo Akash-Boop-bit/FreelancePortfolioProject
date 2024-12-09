@@ -82,8 +82,69 @@
   background-position: center;
 }
 
+
+
+.mobilemain {
+  display: hidden;
+  position: absolute;
+  background-color: rgb(19, 14, 111);
+  transition: 2s;
+  right: 2vw;
+  box-shadow: 0 0 2vw black;
+  height: 40vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4vw;
+  z-index: 10;
+}
+
+.mobilemain a {
+  background-color: hsl(243, 78%, 40%);
+  padding: 0;
+  height: min-content;
+  padding: 1rem 2rem;
+}
+
+.navmob button {
+  background-color: blue; /* Set the background color */
+  border: 0px solid #333; /* Add a border */
+  border-radius: 8px; /* Optional: Rounded corners */
+  display: inline-block; /* Ensure the wrapper fits the icon */
+  cursor: pointer; /* Add a pointer cursor */
+  transition: all 0.3s; /* Smooth transitions for hover effects */
+  color: white;
+}
+
+.navmob button:active{
+  transform: rotateX(90deg);
+
+}
+
+.navmob2 button {
+  background-color: black; /* Set the background color */
+  border: 0px solid #333; /* Add a border */
+  border-radius: 8px; /* Optional: Rounded corners */
+  display: inline-block; /* Ensure the wrapper fits the icon */
+  cursor: pointer; /* Add a pointer cursor */
+  transition: all 0.3s; /* Smooth transitions for hover effects */
+  color: white;
+}
+
+.navmob2 button:active{
+  transform: rotateX(90deg);
+
+}
+
+
 @media screen and (max-width: 700px) {
   .homelogo {
+    height: 80%;
+    width: 50%;
+  }
+  .navlogo{
     height: 80%;
     width: 50%;
   }

@@ -8,6 +8,20 @@ import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 
 function App() {
+  const [size, setSize] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth < 700) {
+      setSize(false);
+    }
+  }, []);
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 700) {
+      setSize(false);
+    } else {
+      setSize(true);
+    }
+  });
   useEffect(() => {
     // Initialize Lenis
     const lenis = new Lenis();
@@ -35,10 +49,10 @@ function App() {
       ) : (
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects  />} />
-            <Route path="/about" element={<AboutMe />} />
-            <Route path="/contact" element={<ContactMe />} />
+            <Route path="/" element={<Home size={size}/>} />
+            <Route path="/projects" element={<Projects  size={size}/>} />
+            <Route path="/about" element={<AboutMe size={size}/>} />
+            <Route path="/contact" element={<ContactMe size={size}/>} />
 
           </Routes>
         </BrowserRouter>

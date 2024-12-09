@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import classes from "./css/Navbar.module.css";
 
-const Navbar = ({ home }) => {
+const Navbar = ({ home, size }) => {
   const navigate = useNavigate();
-  const [size, setSize] = useState(true);
-
-  useEffect(() => {
-    if (window.innerWidth < 700) {
-      setSize(false);
-    }
-  }, []);
-  window.addEventListener("resize", () => {
-    if (window.innerWidth < 700) {
-      setSize(false);
-    } else {
-      setSize(true);
-    }
-  });
+  const [mobilemain, setMobilemain] = useState(false);
 
   return (
     <div>
@@ -37,13 +26,18 @@ const Navbar = ({ home }) => {
               <Link to="/contact">Contact Me</Link>
             </div>
           ) : (
-            <div>
-              <div>
-                {/* <Link to="/">Home</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/about">About Me</Link>
-                <Link to="/contact">Contact Me</Link> */}
-              </div>
+            <div className={classes.navmob}>
+              <button onClick={() => setMobilemain(!mobilemain)}>
+                <FontAwesomeIcon icon={faBars} size="4x" />
+              </button>
+              {mobilemain && (
+                <div className={classes.mobilemain}>
+                  <Link to="/">Home</Link>
+                  <Link to="/projects">Projects</Link>
+                  <Link to="/about">About Me</Link>
+                  <Link to="/contact">Contact Me</Link>
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -55,12 +49,28 @@ const Navbar = ({ home }) => {
             }}
             className={classes.navlogo}
           ></div>
-          <div className={classes.navmain}>
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/about">About Me</Link>
-            <Link to="/contact">Contact Me</Link>
-          </div>
+          {size ? (
+            <div className={classes.navmain}>
+              <Link to="/">Home</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/about">About Me</Link>
+              <Link to="/contact">Contact Me</Link>
+            </div>
+          ) : (
+            <div className={classes.navmob2}>
+              <button onClick={() => setMobilemain(!mobilemain)}>
+                <FontAwesomeIcon icon={faBars} size="4x" />
+              </button>
+              {mobilemain && (
+                <div className={classes.mobilemain}>
+                  <Link to="/">Home</Link>
+                  <Link to="/projects">Projects</Link>
+                  <Link to="/about">About Me</Link>
+                  <Link to="/contact">Contact Me</Link>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>
