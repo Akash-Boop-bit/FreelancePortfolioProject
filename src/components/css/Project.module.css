@@ -1,0 +1,125 @@
+.main {
+  padding: 5vw 0;
+
+  min-height: 150vh;
+  width: 100vw;
+  /* background-color: black; */
+}
+
+.imagegallery {
+  position: relative;
+  height: 80vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imagegallery img {
+  height: 100%;
+  box-shadow: 0 0 4rem white;
+  border-radius: 4rem;
+}
+
+.btnleft {
+  position: absolute;
+  left: 2vw;
+  background: none;
+  border: none;
+
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+.btnright {
+  background: none;
+  border: none;
+  right: 2vw;
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.btnleft:hover,
+.btnright:hover {
+  box-shadow: 0 0 4rem white;
+  /* background-color: blue; */
+  color: black;
+}
+
+.infodiv {
+  margin-top: 10vw;
+}
+.infodiv h1 {
+  background-color: yellow;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  width: fit-content;
+  margin-left: 10%;
+}
+
+.infotech {
+  padding: 0 4rem;
+  font-size: 1.2rem;
+}
+
+.infodesc {
+  padding: 4rem 4rem 2rem;
+  font-size: 1.5rem;
+}
+.infodiv span {
+  font-weight: 700;
+}
+.infolink {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  color: yellow;
+  text-shadow: 0 0 0.5rem yellow;
+}
+
+@media screen and (max-width: 600px) {
+  .imagegallery {
+    height: 25vh;
+    padding: 0;
+    margin: 0;
+margin-top: 4rem;
+  }
+  .imagegallery img {
+    box-shadow: 0 0 1rem white;
+
+  }
+
+  .btnleft {
+    position: absolute;
+    left: 2vw;
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    z-index: 2;
+  }
+  .btnright {
+    background: none;
+    border: none;
+    right: 2vw;
+    position: absolute;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    z-index: 2;
+
+  }
+
+  .infotech {
+    padding: 0 1rem;
+    font-size: 1.4rem;
+  }
+  
+  .infodesc {
+    padding: 2rem 1rem 1rem;
+    font-size: 1.5rem;
+  }
+  .infolink {
+    padding: 2rem 1rem;
+  }
+}

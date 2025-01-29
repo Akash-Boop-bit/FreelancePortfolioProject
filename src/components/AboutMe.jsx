@@ -98,7 +98,7 @@ const AboutMe = ({size}) => {
     },
     { scope: "#box" }
   );
-
+ 
   return (
     <>
       {!render ? (
@@ -166,6 +166,10 @@ const AboutMe = ({size}) => {
         </div>
 
         <About size={size}/>
+        <div className={classes.education}></div>
+        <div className={classes.catagories}>
+
+        </div>
       </div>
     </>
   );

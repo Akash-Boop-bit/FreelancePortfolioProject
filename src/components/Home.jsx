@@ -8,11 +8,11 @@ import Navbar from "./Navbar";
 import About from "./About";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const Home = ({size}) => {
+const Home = ({ 
+  size }) => {
   const trigg = useRef(null);
   const vid = useRef(null);
   const card = useRef(null);
-
 
   useGSAP(() => {
     gsap.to(vid.current, {
@@ -77,7 +77,7 @@ const Home = ({size}) => {
         <div ref={trigg} className={classes.trigger}></div>
         {/* <div className={classes.fade}></div> */}
         <div>
-          <About size={size}/>
+          <About size={size} />
         </div>
       </div>
     </>

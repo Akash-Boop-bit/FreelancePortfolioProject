@@ -1,5 +1,6 @@
 .main {
-  min-height: 200dvh;
+  overflow-x: hidden;
+  min-height: 100dvh;
   width: 100vw;
   padding: 8rem 0 0 0;
   display: flex;
@@ -16,12 +17,14 @@
   border-radius: 1rem;
   padding: 0.6rem 2rem;
   width: fit-content;
+  overflow-x: hidden;
 }
 
 .gallerycontainer {
   overflow-x: auto;
   white-space: nowrap;
   width: 90%;
+  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
@@ -40,6 +43,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 2rem 0;
+  overflow-x: hidden;
 }
 
 .card {

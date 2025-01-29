@@ -1,0 +1,28 @@
+.main {
+    min-height: 400dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.span {
+    background-color: rgb(110, 110, 184);
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-left: 12vw;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.6rem 2rem;
+    width: fit-content;
+  }
+
+  .freelance {
+    background-color: black;
+    padding: 10vh 0 0 0 ;
+  }
+  .personal {
+    background-color: blue;
+    padding: 10vh 0;
+  }

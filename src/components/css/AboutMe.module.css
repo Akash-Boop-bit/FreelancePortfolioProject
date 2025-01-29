@@ -1,19 +1,22 @@
 .background {
+
   min-height: 200dvh;
-  width: 100vw;
+  width: 100dvw;
   background: linear-gradient(
     150deg,
     rgb(11, 11, 108),
     rgb(72, 72, 195),
     rgb(11, 11, 108)
   );
+  overflow-x: hidden;
 }
 .main {
   display: flex;
   flex-direction: column;
   color: white;
   min-height: 100dvh;
-  width: 100%;
+  width: 100dvw;
+  overflow-x: hidden;
 }
 
 .main span {
@@ -73,6 +76,27 @@
   position: absolute;
   right: 5%;
   z-index: 1;
+}
+
+.catagories {
+  min-height: 100dvh;
+  width: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;  
+}
+.education {
+  background-color: black;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education div{
+  width: 80%;
+  height: 80%;
+  
 }
 
 @media screen and (max-width: 700px) {
