@@ -13,11 +13,19 @@ import { text } from "@fortawesome/fontawesome-svg-core";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech }) => {
+const Project = ({
+  projectName,
+  name,
+  bgColor,
+  desc,
+  textColor,
+  webLink,
+  tech,
+}) => {
   const [num, setNum] = useState(0);
-  const {contextSafe} = useGSAP();
+  const { contextSafe } = useGSAP();
 
-  const imgRef = useRef(null)
+  const imgRef = useRef(null);
 
   // useGSAP(() => {
   //   gsap.set(imgRef.current, {
@@ -26,7 +34,7 @@ const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech })
   //   })
   //   gsap.to(imgRef.current, {
   //       y: 0,
-  //       opacity: 1, 
+  //       opacity: 1,
   //       duration: 1,
   //       scrollTrigger: {
   //           trigger: imgRef.current
@@ -34,18 +42,17 @@ const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech })
   //   })
   // });
 
-  const imgAnimation = contextSafe(()=>{
+  const imgAnimation = contextSafe(() => {
     gsap.set(imgRef.current, {
-        x: 100,
-        opacity: 0
-        
-    })
+      x: 100,
+      opacity: 0,
+    });
     gsap.to(imgRef.current, {
-        x: 0,
-        opacity: 1,
-        duration: 1
-    })
-  })
+      x: 0,
+      opacity: 1,
+      duration: 1,
+    });
+  });
 
   const btnHandler = (mode) => {
     if (mode == 1) {
@@ -61,13 +68,16 @@ const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech })
         setNum(num - 1);
       }
     }
-    imgAnimation()
-    return
+    imgAnimation();
+    return;
   };
 
   return (
     <>
-      <div style={{backgroundColor: bgColor, color: textColor}} className={classes.main}>
+      <div
+        style={{ backgroundColor: bgColor, color: textColor }}
+        className={classes.main}
+      >
         <div className={classes.imagegallery}>
           <button onClick={() => btnHandler(-1)} className={classes.btnleft}>
             <FontAwesomeIcon
@@ -75,7 +85,12 @@ const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech })
               style={{ color: "yellow", background: "none", height: "50px" }}
             />{" "}
           </button>
-          <img id="image" ref={imgRef} src={`/projects/${projectName}/${num}.png`} alt="image" />
+          <img
+            id="image"
+            ref={imgRef}
+            src={`/projects/${projectName}/${num}.png`}
+            alt="image"
+          />
           <button onClick={() => btnHandler(1)} className={classes.btnright}>
             <FontAwesomeIcon
               icon={faChevronRight}
@@ -83,17 +98,21 @@ const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech })
             />
           </button>
         </div>
-        <div className={classes.infodiv} style={{backgroundColor: bgColor, color: textColor}}>
-            <h1>{name}</h1>
-            <div className={classes.infodesc}>
-              {desc}
-            </div>
-            <div className={classes.infotech}>
-              <span>Technologies Used : </span> {tech}
-            </div>
-            <div className={classes.infolink}>
-              <span>Link : </span> <a href={webLink} target="_blank" style={{color: textColor}} >{webLink}</a>
-            </div>
+        <div
+          className={classes.infodiv}
+          style={{ backgroundColor: bgColor, color: textColor }}
+        >
+          <h1>{name}</h1>
+          <div className={classes.infodesc}>{desc}</div>
+          <div className={classes.infotech}>
+            <span>Technologies Used : </span> {tech}
+          </div>
+          <div className={classes.infolink}>
+            <span>Link : </span>{" "}
+            <a href={webLink} target="_blank" style={{ color: textColor }}>
+              {webLink}
+            </a>
+          </div>
         </div>
       </div>
     </>
