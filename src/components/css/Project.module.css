@@ -3,7 +3,6 @@
 
   min-height: 150vh;
   width: 100vw;
-  /* background-color: black; */
 }
 
 .imagegallery {
@@ -48,34 +47,34 @@
 }
 
 .infodiv {
-  margin-top: 10vw;
+  margin-top: 5vw;
+  margin-left: 10%;
 }
 .infodiv h1 {
-  background-color: yellow;
-  color: black;
-  padding: 1rem 2rem;
+  color: white;
   border-radius: 2rem;
   width: fit-content;
-  margin-left: 10%;
+  text-shadow: 0 0 0.5rem yellow;
+  padding: 2rem 0;
+  text-decoration: underline;
 }
 
 .infotech {
-  padding: 0 4rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .infodesc {
-  padding: 4rem 4rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 0;
 }
 .infodiv span {
   font-weight: 700;
+  text-shadow: 0 0 0.5rem yellow;
 }
 .infolink {
-  padding: 2rem 4rem;
-  font-size: 2rem;
-  color: yellow;
-  text-shadow: 0 0 0.5rem yellow;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1rem 0;
 }
 
 @media screen and (max-width: 600px) {

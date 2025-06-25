@@ -89,10 +89,10 @@ const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech })
               {desc}
             </div>
             <div className={classes.infotech}>
-              <span>technologies used : </span> {tech}
+              <span>Technologies Used : </span> {tech}
             </div>
             <div className={classes.infolink}>
-              <span>Link : </span> <a href={webLink} style={{color: textColor}} >{webLink}</a>
+              <span>Link : </span> <a href={webLink} target="_blank" style={{color: textColor}} >{webLink}</a>
             </div>
         </div>
       </div>

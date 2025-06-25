@@ -1,0 +1,288 @@
+.border {
+  width: 100vw;
+  height: 1px;
+  background-color: aqua;
+  opacity: 0.5;
+}
+
+.skillcontainer {
+  background-color: black;
+  height: 100dvh;
+  position: relative;
+  width: 100vw;
+}
+
+.skillcontainer::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 37%;
+  width: 30%;
+  height: 30%;
+  background: radial-gradient(circle, blue, pink);
+  filter: blur(100px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.skillcontainer::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 20%;
+  height: 20%;
+  background: radial-gradient(circle, pink, #333399);
+  filter: blur(150px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.skillcontainer h1 {
+  padding: 10vw 10vw 0;
+  width: fit-content;
+  font-size: 4rem;
+  font-weight: 50;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(90deg, rgb(143, 115, 119), #3232a4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill {
+  padding-top: 5vw;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill p {
+  font-size: 2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  margin-top: 2rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgcontainer {
+  padding: 0 1rem;
+  height: 5rem;
+  width: 5rem;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.skillsimg {
+  height: 90%;
+  width: 90%;
+}
+
+.imgcontainer:hover {
+  scale: 1.2;
+}
+
+.projects {
+  background-color: black;
+  position: relative;
+  width: 100vw;
+}
+
+.projects::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 20%;
+  height: 20%;
+  background: radial-gradient(circle, white, #333399);
+  filter: blur(200px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.projects h1 {
+  padding: 4rem;
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50%;
+  transform: rotateZ(10deg);
+  text-shadow: 0 0 1rem yellow;
+}
+
+.project {
+  width: 80%;
+  min-height: 100dvh;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.project1 {
+  width: 60%;
+  height: 40dvh;
+  border: 2px solid aqua;
+  box-shadow: 0 0 1rem white;
+  border-radius: 4rem;
+  position: relative;
+  z-index: 0;
+}
+.project1::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 50%;
+  height: 30%;
+  background: radial-gradient(circle, blue, #333399);
+  filter: blur(100px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+.project1 img {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  border-radius: 4rem;
+}
+
+.midline{
+    width: .2rem;
+    background-color: white;
+    box-shadow: 0 0 1rem yellow;
+    height: 15rem;
+    margin: auto;
+}
+
+.projectnameleft {
+  position: absolute;
+  right: -35%;
+  top: 30%;
+  z-index: 5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:0 0 1rem black;
+}
+
+.projectnameleft h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.projectnameleft p{
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.project2 {
+  width: 60%;
+  height: 40dvh;
+  border: 2px solid aqua;
+  box-shadow: 0 0 1rem white;
+  border-radius: 4rem;
+  margin-left: auto;
+  position: relative;
+}
+.project2::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -30%;
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle, blue, white);
+  filter: blur(100px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+.project2::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -10%;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(circle, white, pink);
+  filter: blur(200px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+.project2 img {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border-radius: 4rem;
+}
+.projectnameright {
+  position: absolute;
+  left: -35%;
+  top: 50%;
+  z-index: 5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:0 0 1rem black;
+  text-align: right;
+}
+.projectnameright h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.projectnameright p{
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+
+.projectbg1 {
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  width: 15%;
+  height: 10%;
+  background: radial-gradient(circle, yellow, pink);
+  filter: blur(150px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.projectbg2 {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 15%;
+  height: 10%;
+  background: radial-gradient(circle, blue, pink);
+  filter: blur(150px);
+  opacity: 0.8;
+  z-index: 0;
+  border-radius: 50%;
+}
+.bubble {
+  position: absolute;
+  bottom: -30%;
+  left: -15%;
+  height: 13rem;
+  width: 13rem;
+  background-image: url("./../images/bubble1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+

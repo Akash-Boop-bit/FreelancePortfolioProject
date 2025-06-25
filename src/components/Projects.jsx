@@ -56,7 +56,7 @@ const Projects = ({ size }) => {
               <Project
                 projectName="solarsystem"
                 name="Solar System"
-                bgColor="blue"
+                bgColor="black"
                 textColor="white"
                 desc="Your Solar System project is an interactive 3D visualization built using Three.js. It showcases realistic planetary orbits, lighting effects, and smooth animations to simulate the motion of celestial bodies. Users can explore the solar system dynamically, making it both educational and visually engaging."
                 webLink="https://akash-solarsystem.netlify.app/"
@@ -66,7 +66,7 @@ const Projects = ({ size }) => {
               <Project
                 projectName="chatapp"
                 name="Chat Loom"
-                bgColor="Blue"
+                bgColor="black"
                 textColor="white"
                 desc="ChatLoom is a real-time chat application built with the MERN stack, offering seamless one-on-one and group messaging. It features user authentication, instant message delivery, and a modern UI for a smooth chatting experience. The app ensures secure communication with end-to-end encryption and real-time updates."
                 webLink="therapistai.netlify.app"
@@ -78,7 +78,7 @@ const Projects = ({ size }) => {
            <Project
                 projectName="farmersfirst"
                 name="Farmers First"
-                bgColor="Blue"
+                bgColor="black"
                 textColor="white"
                 desc="Farmers First is a platform created to empower farmers by enabling them to sell their products directly to customers, bypassing middlemen. The project includes features such as a one-on-one chat system for direct communication, a payment integration with Razorpay for secure transactions, and a product confirmation system to ensure the farmer gets paid after the customer picks up the product. It also supports voice input and multiple languages to help less-educated farmers, promoting fair pricing and eliminating barriers to market access."
                 webLink="https://farmersfirst.netlify.app/"

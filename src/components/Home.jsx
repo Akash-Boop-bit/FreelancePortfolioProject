@@ -6,10 +6,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TypeWriterEffect from "./TypeWriterEffect";
 import Navbar from "./Navbar";
 import About from "./About";
+import Home2 from "./Home2";
+import Home3 from "./Home3";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const Home = ({ 
-  size }) => {
+const Home = ({ size }) => {
   const trigg = useRef(null);
   const vid = useRef(null);
   const card = useRef(null);
@@ -76,9 +77,8 @@ const Home = ({
         </div>
         <div ref={trigg} className={classes.trigger}></div>
         {/* <div className={classes.fade}></div> */}
-        <div>
-          <About size={size} />
-        </div>
+        <Home2 />
+        <Home3 />
       </div>
     </>
   );

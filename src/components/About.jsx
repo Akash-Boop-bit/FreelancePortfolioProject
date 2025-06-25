@@ -12,7 +12,7 @@ const About = ({ size }) => {
     ["react.png"],
     ["node.webp"],
     ["mongo.png"],
-    ["c++.png"],
+    ["reactnative.svg"],
   ]);
   const [btnnum, setBtnnum] = useState(1);
   const boxref = useRef();
@@ -39,7 +39,9 @@ const About = ({ size }) => {
       case 5:
         document.getElementById("btn5").style.backgroundColor = "black";
         break;
-
+      case 6:
+          document.getElementById("btn6").style.backgroundColor = "black";
+          break;
       default:
         break;
     }
@@ -66,11 +68,12 @@ const About = ({ size }) => {
       ["react.png"],
       ["node.webp"],
       ["mongo.png"],
+      ["reactnative.svg"],
       ["c++.png"],
       ["python.png"],
+      ["js.avif"],
       ["html.jpg"],
       ["css.png"],
-      ["js.avif"],
     ];
     let newarr;
     gsap.to(galleryref.current, {
@@ -96,9 +99,11 @@ const About = ({ size }) => {
         newarr = arr.slice(3, 7);
         break;
       case 5:
-        newarr = arr.slice(4);
+        newarr = arr.slice(4, 8);
         break;
-
+      case 6:
+        newarr = arr.slice(5, 9);
+        break;
       default:
         break;
     }
@@ -161,6 +166,12 @@ const About = ({ size }) => {
                 className={classes.btn}
                 onClick={() => btnsHandler(5)}
                 id="btn5"
+                name="btn"
+              ></button>
+              <button
+                className={classes.btn}
+                onClick={() => btnsHandler(6)}
+                id="btn6"
                 name="btn"
               ></button>
             </div>

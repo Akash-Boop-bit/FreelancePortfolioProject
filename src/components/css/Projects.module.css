@@ -23,6 +23,7 @@
     padding: 10vh 0 0 0 ;
   }
   .personal {
-    background-color: blue;
+    background-color: black;
     padding: 10vh 0;
+    border-top: 1px solid white;
   }
