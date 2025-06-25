@@ -19,20 +19,20 @@ const Project = ({ projectName, name, bgColor, desc, textColor, webLink, tech })
 
   const imgRef = useRef(null)
 
-  useGSAP(() => {
-    gsap.set(imgRef.current, {
-        y: 100,
-        opacity: 0
-    })
-    gsap.to(imgRef.current, {
-        y: 0,
-        opacity: 1, 
-        duration: 1,
-        scrollTrigger: {
-            trigger: imgRef.current
-        }
-    })
-  });
+  // useGSAP(() => {
+  //   gsap.set(imgRef.current, {
+  //       y: 100,
+  //       opacity: 0
+  //   })
+  //   gsap.to(imgRef.current, {
+  //       y: 0,
+  //       opacity: 1, 
+  //       duration: 1,
+  //       scrollTrigger: {
+  //           trigger: imgRef.current
+  //       }
+  //   })
+  // });
 
   const imgAnimation = contextSafe(()=>{
     gsap.set(imgRef.current, {
