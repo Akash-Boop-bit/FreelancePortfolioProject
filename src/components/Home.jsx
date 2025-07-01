@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Home2 from "./Home2";
 import Home3 from "./Home3";
+import Footer from "./Footer";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Home = ({ size }) => {
@@ -64,9 +65,9 @@ const Home = ({ size }) => {
               <div className={classes.card1}>
                 <h1>Hello !</h1>
                 <p>
-                  I'm Akash, a Full Stack Web Developer skilled in the MERN
+                  I'm Akash, a Full Stack Web and Mobile Developer skilled in the MERN
                   stack with 1-2 years of development experience. Currently, I'm
-                  a first-year B.Tech CSE student, passionate about building
+                  a Second-year B.Tech CSE student, passionate about building
                   innovative and scalable applications.
                 </p>
                 <TypeWriterEffect />
@@ -79,6 +80,7 @@ const Home = ({ size }) => {
         {/* <div className={classes.fade}></div> */}
         <Home2 />
         <Home3 />
+        <Footer />
       </div>
     </>
   );

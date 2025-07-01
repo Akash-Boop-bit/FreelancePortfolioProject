@@ -23,8 +23,10 @@ const Home3 = () => {
       <div className={classes.border}></div>
       <div className={classes.skillcontainer}>
         <h1>My Skills</h1>
+        <p className={classes.mobpara}>The skills, tools and technologies i use:</p>
         <div className={classes.skill}>
           <p>The skills, tools and technologies i use:</p>
+
           <div className={classes.skills}>
             {arr1.map((e, i) => {
               return (
@@ -58,7 +60,7 @@ const Home3 = () => {
           <div className={classes.projectbg2}></div>
           <div className={classes.projectbg3}></div>
           <div className={classes.project1}>
-          <div className={classes.bubble}></div>
+            <div className={classes.bubble}></div>
 
             <div className={classes.projectnameleft}>
               <h2>Vocal Haven</h2>
@@ -68,7 +70,6 @@ const Home3 = () => {
           </div>
           <div className={classes.midline}></div>
           <div className={classes.project2}>
-            
             <div className={classes.projectnameright}>
               <h2>JusticePal</h2>
               <p>Apr 2024</p>
@@ -77,7 +78,7 @@ const Home3 = () => {
           </div>
           <div className={classes.midline}></div>
           <div className={classes.project1}>
-          <div className={classes.bubble}></div>
+            <div className={classes.bubble}></div>
 
             <div className={classes.projectnameleft}>
               <h2>Farmers First</h2>
@@ -87,7 +88,6 @@ const Home3 = () => {
           </div>
           <div className={classes.midline}></div>
           <div className={classes.project2}>
-
             <div className={classes.projectnameright}>
               <h2>Solar System</h2>
               <p>Dec 2024</p>

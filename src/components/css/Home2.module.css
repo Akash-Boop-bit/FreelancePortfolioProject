@@ -9,7 +9,7 @@
   color: white;
   overflow: hidden;
   min-height: 100vh;
-  width: 100vw;
+  width: 100dvw;
 }
 
 .services::before {
@@ -179,7 +179,56 @@
   left: 30%;
 }
 
+@media (max-width: 700px) {
+  .service h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+  }
+  .services {
+    padding: 0;
+  }
+  .service {
+    width: 100dvw;
+    margin: 0;
+  }
+  .serviceMain {
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .serviceMain h2 {
+    font-size: 1.5rem;
+  }
+  .service1 {
+    width: 80%;
+  }
+  .service2 {
+    width: 80%;
+    margin-left: 0;
+  }
+  .line {
+    margin: auto;
+    width: 0.1rem;
+    background-color: white;
+  }
 
+  .about {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .aboutimg {
+    width: 90%;
+  }
 
-
-
+  .aboutdetail {
+    width: 100%;
+  }
+  .bubble {
+    top: 30%;
+    height: 10rem;
+    width: 10rem;
+  }
+}
