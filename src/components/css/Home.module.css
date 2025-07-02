@@ -80,10 +80,15 @@
 }
 
 @media screen and (max-width: 700px) {
-  /* .video {
-    margin-top: 50vh;
-    height: 50vh;
-  } */
+  .trigger {
+    height: 100vh;
+  }
+  .video {
+    display: none;
+  }
+  .vid {
+    height: 200vh;
+  }
   .main2 {
     padding: 5vh 2vw;
   }

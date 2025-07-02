@@ -59,6 +59,17 @@
   text-decoration: underline;
 }
 
+/* From Uiverse.io by xueyuantan */
+.buttonlink {
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
 .infotech {
   font-size: 1rem;
 }
@@ -74,21 +85,28 @@
 .infolink {
   font-size: 1.2rem;
   color: white;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 @media screen and (max-width: 600px) {
+  .main {
+    min-height: 80dvh;
+  }
   .imagegallery {
     height: 25vh;
     padding: 0;
     margin: 0;
-margin-top: 4rem;
+    margin-top: 4rem;
   }
   .imagegallery img {
     box-shadow: 0 0 1rem white;
-
   }
-
+  .infodiv {
+    margin-left: 0;
+  }
+  .infodiv h1 {
+    padding: 1rem 2rem;
+  }
   .btnleft {
     position: absolute;
     left: 2vw;
@@ -106,17 +124,16 @@ margin-top: 4rem;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     z-index: 2;
-
   }
 
   .infotech {
     padding: 0 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
-  
+
   .infodesc {
     padding: 2rem 1rem 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .infolink {
     padding: 2rem 1rem;

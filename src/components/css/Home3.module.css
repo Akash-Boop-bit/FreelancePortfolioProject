@@ -132,6 +132,7 @@
   min-height: 100dvh;
   margin: auto;
   margin-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .project1 {
@@ -339,6 +340,7 @@
   .project1 {
     width: 90%;
     margin: auto;
+    height: 30vh;
   }
   .projectnameleft {
     right: 0;
@@ -359,7 +361,7 @@
     width: 90%;
     margin-left: 0;
     margin: auto;
-    height: 40vh;
+    height: 30vh;
   }
   .projectnameright {
     position: absolute;

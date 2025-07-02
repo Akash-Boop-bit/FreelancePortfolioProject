@@ -65,10 +65,10 @@ const Home = ({ size }) => {
               <div className={classes.card1}>
                 <h1>Hello !</h1>
                 <p>
-                  I'm Akash, a Full Stack Web and Mobile Developer skilled in the MERN
-                  stack with 1-2 years of development experience. Currently, I'm
-                  a Second-year B.Tech CSE student, passionate about building
-                  innovative and scalable applications.
+                  I'm Lakshay, a Full Stack Web and Mobile Developer skilled in
+                  the MERN stack with 1-2 years of development experience.
+                  Currently, I'm a First-year B.Tech CSE student, passionate
+                  about building innovative and scalable applications.
                 </p>
                 <TypeWriterEffect />
               </div>

@@ -40,28 +40,28 @@ const About = ({ size }) => {
         document.getElementById("btn5").style.backgroundColor = "black";
         break;
       case 6:
-          document.getElementById("btn6").style.backgroundColor = "black";
-          break;
+        document.getElementById("btn6").style.backgroundColor = "black";
+        break;
       default:
         break;
     }
   }, [btnnum]);
 
-  useGSAP(
-    () => {
-      let tl = gsap.timeline({});
-      if (size) {
-        gsap.to(boxref.current, {
-          duration: 1,
-          backgroundColor: "black",
-          scrollTrigger: {
-            trigger: boxref.current,
-          },
-        });
-      }
-    },
-    { scope: "#boxs" }
-  );
+  // useGSAP(
+  //   () => {
+  //     let tl = gsap.timeline({});
+  //     if (size) {
+  //       gsap.to(boxref.current, {
+  //         duration: 1,
+  //         backgroundColor: "black",
+  //         scrollTrigger: {
+  //           trigger: boxref.current,
+  //         },
+  //       });
+  //     }
+  //   },
+  //   { scope: "#boxs" }
+  // );
 
   const btnsHandler = (n) => {
     let arr = [
@@ -120,9 +120,7 @@ const About = ({ size }) => {
     <>
       <div id="boxs">
         <div
-          style={
-            !size ? { backgroundColor: "black" } : { backgroundColor: "white" }
-          }
+          style={{ backgroundColor: "black" }}
           ref={boxref}
           className={classes.main}
         >

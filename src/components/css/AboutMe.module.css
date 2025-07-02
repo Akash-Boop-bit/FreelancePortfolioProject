@@ -1,5 +1,4 @@
 .background {
-
   min-height: 200dvh;
   width: 100dvw;
   background: linear-gradient(
@@ -84,7 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;  
+  background-color: black;
 }
 .education {
   background-color: black;
@@ -93,14 +92,29 @@
   justify-content: center;
   align-items: center;
 }
-.education div{
+.education div {
   width: 80%;
   height: 80%;
-  
+}
+
+.profilepic {
+  width: 30%;
+  height: 30vw;
+  margin: auto;
+  border-radius: 50%;
+  background-image: url("./../images/profilepic.jpg");
+  background-size: 80%;
+  background-position: top;
+  margin-bottom: 10vh;
 }
 
 @media screen and (max-width: 700px) {
-  .main1 p{
+  .profilepic {
+    width: 80%;
+    height: 80vw;
+  }
+
+  .main1 p {
     padding: 2rem;
     font-size: 1rem;
   }

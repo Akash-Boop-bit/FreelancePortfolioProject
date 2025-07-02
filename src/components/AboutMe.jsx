@@ -165,6 +165,8 @@ const AboutMe = ({ size }) => {
           <div className="margin"></div>
         </div>
 
+        <div className={classes.profilepic}></div>
+
         <About size={size} />
         <div className={classes.education}></div>
         <div className={classes.catagories}></div>

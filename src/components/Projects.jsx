@@ -51,7 +51,7 @@ const Projects = ({ size }) => {
               />
             </div>
             <div className={classes.personal}>
-            <span className={classes.span}>Personal Projects</span>
+              <span className={classes.span}>Personal Projects</span>
 
               <Project
                 projectName="solarsystem"
@@ -72,10 +72,11 @@ const Projects = ({ size }) => {
                 webLink="therapistai.netlify.app"
                 tech="React.js, Node.js, Express, MongoDB, Socket.IO, JWT, OAuth, WebSockets, End-to-End Encryption"
               />
-           
-           <span className={classes.span}>Hackathon</span>
+            </div>
+            <div className={classes.personal}>
+              <span className={classes.span}>Hackathon</span>
 
-           <Project
+              <Project
                 projectName="farmersfirst"
                 name="Farmers First"
                 bgColor="black"
@@ -84,7 +85,6 @@ const Projects = ({ size }) => {
                 webLink="https://farmersfirst.netlify.app/"
                 tech="React.js, Node.js, Express, MongoDB, Razorpay, Socket.IO (for real-time chat), WebSockets, OpenAI API (for voice input), JWT, OAuth, Vercel, AWS, Heroku."
               />
-
             </div>
           </div>
         </div>

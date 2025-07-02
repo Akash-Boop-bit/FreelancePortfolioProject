@@ -28,7 +28,7 @@
 .homelogo {
   height: 80%;
   width: 30%;
-  background-image: url("../images/AkashLogo.png");
+  background-image: url("../images/LakshayLogo.png");
   background-size: cover;
   background-position: center;
 }
@@ -77,12 +77,10 @@
 .navlogo {
   height: 80%;
   width: 30%;
-  background-image: url("../images/AkashLogo.png");
+  background-image: url("../images/LakshayLogo.png");
   background-size: cover;
   background-position: center;
 }
-
-
 
 .mobilemain {
   display: hidden;
@@ -118,9 +116,8 @@
   color: white;
 }
 
-.navmob button:active{
+.navmob button:active {
   transform: rotateX(90deg);
-
 }
 
 .navmob2 button {
@@ -133,19 +130,17 @@
   color: white;
 }
 
-.navmob2 button:active{
+.navmob2 button:active {
   transform: rotateX(90deg);
-
 }
-
 
 @media screen and (max-width: 700px) {
   .homelogo {
-    height: 80%;
-    width: 50%;
+    height: 70%;
+    width: 60%;
   }
-  .navlogo{
-    height: 80%;
-    width: 50%;
+  .navlogo {
+    height: 70%;
+    width: 60%;
   }
 }

@@ -9,7 +9,6 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { text } from "@fortawesome/fontawesome-svg-core";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -26,21 +25,6 @@ const Project = ({
   const { contextSafe } = useGSAP();
 
   const imgRef = useRef(null);
-
-  // useGSAP(() => {
-  //   gsap.set(imgRef.current, {
-  //       y: 100,
-  //       opacity: 0
-  //   })
-  //   gsap.to(imgRef.current, {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 1,
-  //       scrollTrigger: {
-  //           trigger: imgRef.current
-  //       }
-  //   })
-  // });
 
   const imgAnimation = contextSafe(() => {
     gsap.set(imgRef.current, {
@@ -108,9 +92,8 @@ const Project = ({
             <span>Technologies Used : </span> {tech}
           </div>
           <div className={classes.infolink}>
-            <span>Link : </span>{" "}
-            <a href={webLink} target="_blank" style={{ color: textColor }}>
-              {webLink}
+            <a className={classes.buttonlink} href={webLink} target="_blank">
+              Link
             </a>
           </div>
         </div>
